@@ -14,9 +14,7 @@ Many of the secrets of quasars lie hidden within their variations. Analysis of q
 
 The LSST (Legacy Survey of Space and Time) will provide a plethora of quasar light curves, with short cadence observations throughout its 10 year run. However, there will be seasonal gaps in the observations, to keep up with the LSST goal of surveying the entire Chilean night sky. In order to utilize the LSST data for variational analysis, it is imperitive to model this data to fill in these gaps. To process the amount of data coming in, any such model should be non-parametric, computational inexpensive, data-driven, and capable of interpolation. We also would like to draw insights from the hidden layers of these models. Thus, we utilize Latent Attentive Neural Processes (AttnLNPs). 
 
-As part of the Serbian In-Kind software contribution to the LSST team (SER-SAG-S1), we present the QNPy Latte package to model and determine parameters (especially the transfer function) of quasar light curves. This work has been done by the guest student Aman N. Raju as part of his masters thesis and presented at the following:
-
-Parts of this thesis have been presented as:
+As part of the Serbian In-Kind software contribution to the LSST team (SER-SAG-S1), we present the QNPy Latte package to model and determine parameters (especially the transfer function) of quasar light curves. This work has been done by Aman N. Raju as part of his masters thesis and presented at the following:
 
 • [“A Deep Learning Approach for Understanding Quasar Light Curves in the
 Legacy Survey of Space and Time"](https://simpozijum.math.rs/s2023/Aman_Raju_Maths_Symposium_Deep_Learning_LSST.pdf) - Symposium Mathematics and Application, Faculty of Mathematics, University of Belgrade, 2023
@@ -40,7 +38,9 @@ SURVEYS”](https://www.aob.rs/en/publishing-en/doi/conferences-papers-and-proce
 black holes with Rubin-LSST: Towards novel insights and discoveries into AGN
 science, Torino, Italy, July 22nd-25th 2024
 
-Furthermore, this repository will be used in the paper, Raju et. al. 2024 (in prep).
+• ["Application of Attentive and Latent Neural Process to Quasar Light Curves in the context of the LSST"](http://elibrary.matf.bg.ac.rs/bitstream/handle/123456789/5697/v1_masterAman%20NadimpalliRaju.pdf?sequence=1) - Masters thesis at University of Belgrade
+
+Furthermore, this repository is the backbone of the paper "A Meta-Learning Framework for Multitask Reverbaration Mapping" [ADS](https://ui.adsabs.harvard.edu/abs/2026arXiv260609665R/abstract) [arxiv](https://arxiv.org/abs/2606.09665).
 
 ## Latent Attentive Neural Processes
 At SER-SAG-S1, we have used Conditonal Neural Processes (CNPs) to model quasar light curves (see [QNPy](https://github.com/kittytheastronaut/QNPy-0.0.2/tree/main)). However, CNPs suffer from issues with underfitting and produce poor samples. Thus, the addition of attentive mechanisms and a latent path allow for an upgraded model. 
@@ -103,3 +103,26 @@ These notebooks work and are named similar to before. The only difference is tha
 
 ### Modelling Scripts (COMING SOON)
 Don't have the time to go through the notebook or want to run your analysis on a supercomputer? Use one of the scripts that we provide. We provide scripts that are capable of clustering and then training seperate models on each cluster, running through the entire process on real light curves and a script to generate both reconstructions and recovered transfer functions and parameters.
+
+## Citation
+If you make use of or reference this framework in your work, please cite it as:
+
+```
+@ARTICLE{2026arXiv260609665R,
+       author = {{Raju}, Aman N. and {Kova{\v{c}}evi{\'c}}, Andjelka B. and {Ili{\'c}}, Dragana and {Tombesi}, Francesco and {Popovi{\'c}}, Luka {\v{C}}. and {Slezak}, Eric and {Sanchez-Saez}, Paula and {Pavlovi{\'c}}, Marina and {{\v{C}}vorovi{\'c}-Hajdinjak}, Iva and {Simi{\'c}}, Sa{\v{s}}a and {Savi{\'c}}, {\DJ}or{\dj}e},
+        title = "{A Meta-Learning Framework for Multitask Reverberation Mapping in Active Galactic Nuclei}",
+      journal = {arXiv e-prints},
+     keywords = {Astrophysics of Galaxies, Instrumentation and Methods for Astrophysics},
+         year = 2026,
+        month = jun,
+          eid = {arXiv:2606.09665},
+        pages = {arXiv:2606.09665},
+          doi = {10.48550/arXiv.2606.09665},
+archivePrefix = {arXiv},
+       eprint = {2606.09665},
+ primaryClass = {astro-ph.GA},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2026arXiv260609665R},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+```
+
