@@ -101,9 +101,6 @@ These notebooks show you how to use the Latte model to reconstruct light curves.
 ### Modelling Tutorial Notebooks w Params
 These notebooks work and are named similar to before. The only difference is that for this folder, you need to provide transfer functions and a dataframe containing parameters associated with the generation of the light curve. The final result will include the comparison of the reconstructed transfer function and the parameters as well.
 
-### Modelling Scripts (COMING SOON)
-Don't have the time to go through the notebook or want to run your analysis on a supercomputer? Use one of the scripts that we provide. We provide scripts that are capable of clustering and then training seperate models on each cluster, running through the entire process on real light curves and a script to generate both reconstructions and recovered transfer functions and parameters.
-
 ## Citation
 If you make use of or reference this framework in your work, please cite it as:
 
