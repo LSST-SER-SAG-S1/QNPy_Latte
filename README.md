@@ -9,6 +9,10 @@
 ![Nonsensical_AI Comic About QNPy](https://github.com/user-attachments/assets/467a2c61-4c73-47ce-bbf9-a7e4b291e6c1)
 ###### Comic generated through ChatGPT
 
+[![Documentation Status](https://readthedocs.org/projects/qnpy-latte/badge/?version=latest)](https://qnpy-latte.readthedocs.io/en/latest/)
+
+📖 **Documentation:** https://qnpy-latte.readthedocs.io/en/latest/
+
 ## Introduction
 Many of the secrets of quasars lie hidden within their variations. Analysis of quasar light curves can unlock some of these secrets, giving a holistic view of the region around the central black hole engine, as well as properties of the black hole. However, studying quasar variability itself is a challenge. The stochastic nature of the variations, coupled with the need for short cadence observations over a long period, make analysis difficult. 
 
