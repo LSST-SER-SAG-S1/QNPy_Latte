@@ -1,0 +1,6 @@
+docs/build/
+.docs-venv/
+__pycache__/
+*.pyc
+.DS_Store
+QNPy_Latte_docs.zip
